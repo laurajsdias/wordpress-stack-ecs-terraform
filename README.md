@@ -14,41 +14,41 @@ Resources created:
 
 ### Running via Github Actions:
 
-- Push changes to main branch
-or
+- Push changes to main branch  
+OR  
 - Run the workflow manually (Actions menu > Click on Workflow on the right side panel > Run workflow > Choose branch main > Run workflow)
 
 ### Running locally:
 
 ### Step 1. Run VPC Terraform code
 
-`cd environments/dev/aws-vpc`
-`terraform init`
-`terraform apply`
+- `cd environments/dev/aws-vpc`
+- `terraform init`
+- `terraform apply`
 
 ### Step 2. Run RDS Terraform code
 
-`cd environments/dev/aws-rds`
-`terraform init`
-`terraform apply`
+- `cd environments/dev/aws-rds`
+- `terraform init`
+- `terraform apply`
 
 ### Step 3. Run ECS Terraform code
 
-`cd environments/dev/aws-ecs`
-`terraform init`
-`terraform apply`
+- `cd environments/dev/aws-ecs`
+- `terraform init`
+- `terraform apply`
 
 ### Step 4. Run ECR Terraform code
 
-`cd environments/dev/aws-ecr`
-`terraform init`
-`terraform apply`
+- `cd environments/dev/aws-ecr`
+- `terraform init`
+- `terraform apply`
 
 ### Step 5. Run EC-Wordpress Terraform code
 
-`cd environments/dev/aws-ecs-wordpress`
-`terraform init`
-`terraform apply`
+- `cd environments/dev/aws-ecs-wordpress`
+- `terraform init`
+- `terraform apply`
 
 
 
