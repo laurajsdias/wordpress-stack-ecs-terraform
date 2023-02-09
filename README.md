@@ -12,6 +12,11 @@ Resources created:
 
 ## Configuration
 
+### Pre-requisites:
+
+- Create two secrets on the Github Repository (AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY). The AWS_ACCESS_KEY_ID used must have permission to deploy all the resources, from S3 to ECS.
+- Settings > Secrets and Variables > Actions > New repository secret
+
 ### Running via Github Actions:
 
 - Push changes to main branch  
