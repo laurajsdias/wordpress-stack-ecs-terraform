@@ -62,7 +62,7 @@ locals {
 }
 
 module "aws-ecs-wordpress" {
-  source                    = "../../../modules/aws-ecs-wordpress"
+  source                    = "../../modules/aws-ecs-wordpress"
   region                    = "us-east-1"
   vpc_id                    = local.vpc_id
   subnet_id                 = local.subnet_id
@@ -82,9 +82,9 @@ module "aws-ecs-wordpress" {
   fargate_memory            = 512
   ecs_cluster_id            = local.ecs_cluster_id
   tags                      = {
-	environment = "dev"
-	project     = "ecs-wordpress"
-	terraform   = true
+    environment = "dev"
+    project     = "ecs-wordpress"
+    terraform   = true
   }
 }
 

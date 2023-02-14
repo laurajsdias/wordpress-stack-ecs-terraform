@@ -28,8 +28,7 @@ module "aws_rds" {
   vpc_id                  = local.vpc_id
   region                  = "us-east-1"
   availability_zone       = "us-east-1a"
-  allowed_security_groups = [
-	local.sg_id]
+  allowed_security_groups = [local.sg_id]
   db_port                 = 3306
   db_name                 = "wordpress"
   db_allocated_storage    = 5
@@ -41,9 +40,9 @@ module "aws_rds" {
   db_parameter_group_name = "default.mysql10.5"
   db_skip_final_snapshot  = true
   tags                    = {
-	environment = "dev"
-	project     = "ecs-wordpress"
-	terraform   = true
+    environment = "dev"
+    project     = "ecs-wordpress"
+    terraform   = true
   }
 }
 

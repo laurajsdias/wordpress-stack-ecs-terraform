@@ -11,6 +11,11 @@ terraform {
 module "aws-ecr" {
   source = "../../modules/aws-ecr"
   region = "us-east-1"
+  tags   = {
+    environment = "dev"
+    project     = "ecs-wordpress"
+    terraform   = true
+  }
 }
 
 output "arn" {
