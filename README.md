@@ -49,7 +49,7 @@ OR
 - `terraform init`
 - `terraform apply`
 
-### Step 5. Run EC-Wordpress Terraform code
+### Step 5. Run ECS-Wordpress Terraform code
 
 - `cd environments/dev/aws-ecs-wordpress`
 - `terraform init`
